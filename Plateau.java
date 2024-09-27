@@ -70,17 +70,17 @@ public class Plateau {
         System.out.println("*  " + this.nbMines + "    /    "+ this.nbDrapeaux +"       *");
         System.out.println("**********************");
     
-        System.out.print("  ");
-        for (int i = 1; i < adja[0].length; i++) {
+        System.out.print("    ");
+        for (int i = 1; i < adja[0].length - 1; i++) {
             System.out.print(i + " ");
         }
         System.out.println();
         System.out.println("  --------------------");
     
-        char[] rowLabels = {' ','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'};
-        for (int i = 0; i < adja.length; i++) {
+        char[] rowLabels = {'-','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'};
+        for (int i = 1; i < adja.length - 1; i++) {
             System.out.print(rowLabels[i] + " | ");
-            for (int j = 0; j < adja[i].length; j++) {
+            for (int j = 1; j < adja[i].length - 1; j++) {
                 if (adja[i][j] == -1) {
                     System.out.print("* ");
                 } else {
@@ -89,6 +89,11 @@ public class Plateau {
             }
             System.out.println();
         }
+    }
+
+    public void revelerCase() {
+
+
     }
     
 
