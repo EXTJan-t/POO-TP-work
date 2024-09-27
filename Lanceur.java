@@ -7,5 +7,8 @@ public class Lanceur{
 
         P.afficheTout();
         P.afficheCourant();
+        P.revelerCase(2, 2);
+        P.drapeauxCase(3,3 );
+        P.afficheCourant();
     }
 }

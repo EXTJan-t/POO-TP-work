@@ -99,7 +99,7 @@ public class Plateau {
     
         
         if (etats[x][y] != 0) {
-            System.out.println("invalid operation");
+            //System.out.println("invalid operation");
             return;
         }
     
