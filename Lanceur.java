@@ -6,5 +6,6 @@ public class Lanceur{
         Plateau P = new Plateau(8, 8, 10);
 
         P.afficheTout();
+        P.afficheCourant();
     }
 }
