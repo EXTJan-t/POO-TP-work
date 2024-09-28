@@ -123,12 +123,12 @@ public class Plateau {
     public void drapeauxCase(int x, int y) {
 
 
-        if (etats[x + 1][y + 1] != 0) {
+        if (etats[x][y] != 0) {
             System.out.println("invalid operation");
             return;
         }
 
-        etats[x + 1][y + 1] = 1;
+        etats[x][y] = 1;
         this.nbDrapeaux += 1;
     }
 
